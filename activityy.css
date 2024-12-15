@@ -1,0 +1,57 @@
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    background-color: cornsilk;
+    color: orange;
+}
+h1{
+    color: purple;
+}
+/*attribute selector*/
+a{
+    color: chartreuse;
+    text-decoration: none;
+}
+a:hover{
+    color: dodgerblue;
+}
+/*child selector*/
+ul > li{
+    font-weight: bold;
+    color: burlywood;
+}
+/*sibling selector*/
+h1+p{
+    border-radius: 2px;
+    color: black;
+    background-color: beige;
+    padding:10px;
+}
+/* :hover Pseudo class*/
+ul li:hover{
+    font-size: 50px;
+}
+/*nth child pseudo class*/
+ul li:nth-child(3)
+{
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+/*Not selector pseudo class*/
+p:not(:first-of-type)
+{
+    font-variant: small-caps;
+}
+/* :: before pseudo element */
+ul li::before{
+    content:"🥸";
+}
+/* :: after pseudo element*/
+a::after{
+    content:"🫠";
+}
+/*::first-letter pseudo element*/
+p::first-letter{
+    font-size: larger;
+    color: rgb(184, 7, 92);
+}
